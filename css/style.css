@@ -35,6 +35,7 @@ body {
 }
 
 .menu_image {
+  padding-top: 40px;
     text-align: center;
 }
 .menu_image img {
@@ -72,7 +73,7 @@ body {
     height: 30px;
     border-radius: 50%;
     font-size: 30px;
-    background-color: #5B9BD5;
+
   }
 
   .menu_contacts-list li:nth-child(1)::before {
@@ -111,8 +112,10 @@ body {
     margin: 0;
     margin-bottom: 10px;
     font-size: 24px;
-    font-weight: 400;
-    color: #2062cc;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5B9BD5;
 
   }
 
@@ -131,26 +134,43 @@ body {
   .professional-skill_container {
     margin-bottom: 5px;
     padding: 5px 0;
+    font-size: 14px;
 
   }
 
   .professional_enum {
-
+    font-style: italic;
   }
 
   .professional_enum-line { 
     width: 100%;
     height: 15px;
-    background-color: #DFF0E8;
+    background-color: #AAD0F3;
   }
 
   .progress {
     height: 15px;
-    background-color: #BEDACC;
+    background-color: #5B9BD5;
+  }
+
+  .m-90 {
+     width: 90%;
+  }
+
+  .m-80 {
+     width: 80%;
   }
 
   .m-70 {
      width: 70%;
+  }
+
+  .m-60 {
+     width: 60%;
+  }
+
+  .m-50 {
+     width: 50%;
   }
 
   .content {
@@ -205,9 +225,10 @@ body {
   .description_subheader {
     margin: 0;
     padding: 10px 0;
-     font-size: 16px;
+    font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+    text-shadow: -1px 1px 0 #5D5D5D;
     text-align: center;
     background-color: #5B9BD5;
     letter-spacing: 1px;

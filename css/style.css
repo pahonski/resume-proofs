@@ -14,14 +14,14 @@ body {
     border: 15px #88aae2;
 }
 
-.content-wrapper {
-    margin: 0 auto;
-    padding: 50px 20px;
-    border: 25px;
+
+.content-border {
+    /*border: 5px solid #5B9BD5;*/
 }
 
 .grey-fill {
-  background-color: #F2F7FB;
+  background-color: #ECECEC;
+
 }
 
 .menu {
@@ -35,8 +35,14 @@ body {
 }
 
 .menu_image {
+  padding: 0 10px;
   padding-top: 40px;
-    text-align: center;
+  text-align: center;
+  
+}
+
+.rounded-circle {
+  box-shadow: 0 0 10px #000000;
 }
 .menu_image img {
     display: inline-block;
@@ -47,7 +53,7 @@ body {
     margin-bottom: 40px;
 }
 
-.menu_contacts-list {
+.list-group {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -56,15 +62,15 @@ body {
 
 }
 
- .menu_contacts-list li {
-  display: inline-block;
+ .list-group-item {
     position: relative;
-    padding-left: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
+    padding-left: 40px;
+    line-height: 26px;
  }
 
-  .menu_contacts-list li::before {
+  .list-group-item::before {
     position: absolute;
     content: "";
     top: 5px;
@@ -73,37 +79,30 @@ body {
     height: 30px;
     border-radius: 50%;
     font-size: 30px;
-
+    /*background: #5B9BD5 url("../img/css_sprites.png") no-repeat center;*/
   }
 
-  .menu_contacts-list li:nth-child(1)::before {
-    background: url("../img/linkedin-brands.svg") no-repeat center;
-
+  .list-group-item:nth-child(1)::before {
+    background: url("../img/map-marker-alt-solid.svg") no-repeat center;
   }
 
-  .menu_contacts-list li:nth-child(2)::before {
-    background: url("../img/linkedin-brands.svg") no-repeat center;
+  .list-group-item:nth-child(2)::before {
+    background: url("../img/phone-square-solid.svg") no-repeat center;
   }
 
-  .menu_contacts-list li:nth-child(3)::before {
+  .list-group-item:nth-child(3)::before {
+    background-color: #5B9BD5;
     background: url("../img/envelope-square-solid.svg") no-repeat center;
   }
 
-  .menu_contacts-list li:nth-child(4)::before {
+  .list-group-item:nth-child(4)::before {
+    background: url("../img/skype-brands.svg") no-repeat center;
+  }
+
+  .list-group-item:nth-child(5)::before {
     background: url("../img/linkedin-brands.svg") no-repeat center;
   }
-
-  .menu_contacts-list li:nth-child(5)::before {
-    background: url("../img/linkedin-brands.svg") no-repeat center;
-  }
-
-  .fab {
-   border-radius: 50%;
-   font-size: 30px;
-  }
-
-
-
+  
   .menu_abilities {
     margin-bottom: 40px;
 
@@ -223,16 +222,23 @@ body {
   }
 
   .description_subheader {
+    position: relative;
     margin: 0;
     padding: 10px 0;
+    padding-left: 10px;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
     text-shadow: -1px 1px 0 #5D5D5D;
-    text-align: center;
+    text-align: left;
     background-color: #5B9BD5;
     letter-spacing: 1px;
+  }
 
+  .icon-insert {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 1px -1px 0 #5D5D5D;
   }
 
   .description_content-info {
@@ -240,7 +246,6 @@ body {
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
-    
  }
 
   .description_content-year {
@@ -251,6 +256,18 @@ body {
   .description_content_text {
     margin: 0;
     padding: 10px 0;
+  }
+
+  .description_subheader::after {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    content: "";
+    width: 50%;
+    box-sizing: border-box;
+    height: 1px;
+    background-color: #CACACA;
+    box-shadow: 0 0 2px #6E6E6E;
   }
  
 

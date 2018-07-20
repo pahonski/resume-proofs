@@ -56,6 +56,7 @@ body {
 }
 
  .menu_contacts-list li {
+  display: inline-block;
     position: relative;
     padding-left: 40px;
     padding-bottom: 10px;
@@ -69,9 +70,38 @@ body {
     left: 0;
     width: 30px;
     height: 30px;
-    background-color: red;
     border-radius: 50%;
+    font-size: 30px;
+    background-color: #5B9BD5;
   }
+
+  .menu_contacts-list li:nth-child(1)::before {
+    background: url("../img/linkedin-brands.svg") no-repeat center;
+
+  }
+
+  .menu_contacts-list li:nth-child(2)::before {
+    background: url("../img/linkedin-brands.svg") no-repeat center;
+  }
+
+  .menu_contacts-list li:nth-child(3)::before {
+    background: url("../img/envelope-square-solid.svg") no-repeat center;
+  }
+
+  .menu_contacts-list li:nth-child(4)::before {
+    background: url("../img/linkedin-brands.svg") no-repeat center;
+  }
+
+  .menu_contacts-list li:nth-child(5)::before {
+    background: url("../img/linkedin-brands.svg") no-repeat center;
+  }
+
+  .fab {
+   border-radius: 50%;
+   font-size: 30px;
+  }
+
+
 
   .menu_abilities {
     margin-bottom: 40px;

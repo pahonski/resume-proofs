@@ -1,12 +1,12 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-    
     margin: 0 auto;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -14,41 +14,34 @@ body {
     border: 15px #88aae2;
 }
 
-
-.content-border {
-    /*border: 5px solid #5B9BD5;*/
-}
-
 .grey-fill {
   background-color: #ECECEC;
-
 }
 
 .menu {
     padding: 20px 20px;
-    
 }
 
 .content {
     padding: 20px;
-    
 }
 
 .menu_image {
   padding: 0 10px;
   padding-top: 40px;
   text-align: center;
-  
 }
 
 .rounded-circle {
   box-shadow: 0 0 10px #000000;
 }
+
 .menu_image img {
     display: inline-block;
     width: 260px;
     border-radius: 50%;
 }
+
 .menu_contacts {
     margin-bottom: 40px;
 }
@@ -59,7 +52,6 @@ body {
     list-style: none;
     font-size: 16px;
     color: #000000;
-
 }
 
  .list-group-item {
@@ -70,43 +62,19 @@ body {
     line-height: 26px;
  }
 
-  .list-group-item::before {
-    position: absolute;
-    content: "";
-    top: 5px;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    font-size: 30px;
-    /*background: #5B9BD5 url("../img/css_sprites.png") no-repeat center;*/
-  }
-
-  .list-group-item:nth-child(1)::before {
-    background: url("../img/map-marker-alt-solid.svg") no-repeat center;
-  }
-
-  .list-group-item:nth-child(2)::before {
-    background: url("../img/phone-square-solid.svg") no-repeat center;
-  }
-
-  .list-group-item:nth-child(3)::before {
-    background-color: #5B9BD5;
-    background: url("../img/envelope-square-solid.svg") no-repeat center;
-  }
-
-  .list-group-item:nth-child(4)::before {
-    background: url("../img/skype-brands.svg") no-repeat center;
-  }
-
-  .list-group-item:nth-child(5)::before {
-    background: url("../img/linkedin-brands.svg") no-repeat center;
-  }
+ .icon-position {
+   position: absolute;
+   left: 0;
+   font-size: 28px;
+   color: #5B9BD5;
+   opacity: 0.8;
+   text-shadow: 1px 0 #5D5D5D
+ }
   
   .menu_abilities {
     margin-bottom: 40px;
-
   }
+
   .menu_abilities-header {
     margin: 0;
     margin-bottom: 10px;
@@ -115,12 +83,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #5B9BD5;
-
   }
 
   .menu_abilities-professional {
     margin-bottom: 30px;
-
   }
 
   .professional-title {
@@ -134,7 +100,6 @@ body {
     margin-bottom: 5px;
     padding: 5px 0;
     font-size: 14px;
-
   }
 
   .professional_enum {
@@ -172,17 +137,8 @@ body {
      width: 50%;
   }
 
-  .content {
-
-  }
-
-  .description {
-
-  }
-
   .description_header-field {
     text-align: center;
-   
   }
 
   .description_header {
@@ -211,7 +167,6 @@ body {
     padding: 5px 0;
     font-size: 18px;
     color: #414141;
-    
     text-transform: uppercase;
   }
 
@@ -236,6 +191,7 @@ body {
   }
 
   .icon-insert {
+    padding-right: 5px;
     font-size: 24px;
     color: #FFFFFF;
     text-shadow: 1px -1px 0 #5D5D5D;

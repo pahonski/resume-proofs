@@ -43,7 +43,7 @@ body {
 }
 
 .menu_contacts {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .list-group {
@@ -85,7 +85,7 @@ body {
     color: #5B9BD5;
   }
 
-  .menu_abilities-professional {
+  .menu_abilities-list {
     margin-bottom: 30px;
   }
 
@@ -172,8 +172,9 @@ body {
 
   .description_content {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     font-size: 16px;
+    line-height: 20px;
   }
 
   .description_subheader {
@@ -188,25 +189,47 @@ body {
     text-align: left;
     background-color: #5B9BD5;
     letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
   .icon-insert {
     padding-right: 5px;
     font-size: 24px;
+    line-height: 28px;
     color: #FFFFFF;
     text-shadow: 1px -1px 0 #5D5D5D;
   }
 
   .description_content-info {
-    font-size: 14px;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 22px;
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
  }
 
   .description_content-year {
+    padding-left: 5px;
     color: #9D9D9D;
     font-style: italic;
+  }
+
+  .description_content-place {
+    margin: 0;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  .description_content-place:nth-child(3){
+    text-decoration: underline;
+  }
+
+  .description_content-subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
   }
 
   .description_content_text {
@@ -224,6 +247,20 @@ body {
     height: 1px;
     background-color: #CACACA;
     box-shadow: 0 0 2px #6E6E6E;
+  }
+
+   .menu_abilities-list > .description_subheader::after {
+    display: none;
+  }
+
+  .description_content-title {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
   }
  
 

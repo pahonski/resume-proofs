@@ -211,7 +211,8 @@ body {
  }
 
   .description_content-year {
-    padding-left: 5px;
+    padding-left: 10px;
+    font-size: 14px;
     color: #9D9D9D;
     font-style: italic;
   }
